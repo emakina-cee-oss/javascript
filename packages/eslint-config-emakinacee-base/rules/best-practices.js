@@ -8,8 +8,7 @@ module.exports = {
 
         // enforces return statements in callbacks of array's methods
         // http://eslint.org/docs/rules/array-callback-return
-        // TODO: enable?
-        'array-callback-return': 'off',
+        'array-callback-return': 'error',
 
         // treat var statements as if they were block scoped
         'block-scoped-var': 'off',
@@ -19,8 +18,7 @@ module.exports = {
 
         // enforce that class methods use "this"
         // http://eslint.org/docs/rules/class-methods-use-this
-        // TODO: enable?
-        'class-methods-use-this': ['off', {
+        'class-methods-use-this': ['warn', {
             exceptMethods: [],
         }],
 
@@ -48,8 +46,7 @@ module.exports = {
         'guard-for-in': 'off',
 
         // disallow the use of alert, confirm, and prompt
-        // TODO: enable?
-        'no-alert': 'off',
+        'no-alert': 'error',
 
         // disallow use of arguments.caller or arguments.callee
         'no-caller': 'error',
@@ -268,8 +265,7 @@ module.exports = {
 
         // require using Error objects as Promise rejection reasons
         // http://eslint.org/docs/rules/prefer-promise-reject-errors
-        // TODO enable?
-        'prefer-promise-reject-errors': ['off', { allowEmptyReject: true }],
+        'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
 
         // require use of the second argument for parseInt()
         radix: 'off',

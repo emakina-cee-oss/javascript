@@ -14,8 +14,7 @@ module.exports = {
         'brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
         // require camel case names
-        // TODO: enable?
-        camelcase: ['off', { properties: 'never' }],
+        camelcase: ['error', { properties: 'never' }],
 
         // enforce or disallow capitalization of the first letter of a comment
         // http://eslint.org/docs/rules/capitalized-comments
@@ -178,8 +177,7 @@ module.exports = {
         // enforces new line after each method call in the chain to make it
         // more readable and easy to maintain
         // http://eslint.org/docs/rules/newline-per-chained-call
-        // TODO: enable?
-        'newline-per-chained-call': ['off', { ignoreChainWithDepth: 4 }],
+        'newline-per-chained-call': ['error', { ignoreChainWithDepth: 1 }],
 
         // disallow use of the Array constructor
         'no-array-constructor': 'error',
@@ -197,8 +195,7 @@ module.exports = {
 
         // disallow if as the only statement in an else block
         // http://eslint.org/docs/rules/no-lonely-if
-        // TODO: enable?
-        'no-lonely-if': 'off',
+        'no-lonely-if': 'error',
 
         // disallow un-paren'd mixes of different operators
         // http://eslint.org/docs/rules/no-mixed-operators
@@ -263,8 +260,7 @@ module.exports = {
         'no-spaced-func': 'error',
 
         // disallow tab characters entirely
-        // TODO: enable?
-        'no-tabs': 'off',
+        'no-tabs': 'error',
 
         // disallow the use of ternary operators
         'no-ternary': 'off',

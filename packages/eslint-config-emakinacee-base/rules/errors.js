@@ -14,13 +14,11 @@ module.exports = {
 
         // Disallow await inside of loops
         // http://eslint.org/docs/rules/no-await-in-loop
-        // TODO: enable?
-        'no-await-in-loop': 'off',
+        'no-await-in-loop': 'error',
 
         // Disallow comparisons to negative zero
         // http://eslint.org/docs/rules/no-compare-neg-zero
-        // TODO: enable?
-        'no-compare-neg-zero': 'off',
+        'no-compare-neg-zero': 'error',
 
         // disallow assignment in conditional expressions
         'no-cond-assign': 'error',
@@ -83,8 +81,7 @@ module.exports = {
 
         // disallow use of Object.prototypes builtins directly
         // http://eslint.org/docs/rules/no-prototype-builtins
-        // TODO: enable?
-        'no-prototype-builtins': 'off',
+        'no-prototype-builtins': 'error',
 
         // disallow multiple spaces in a regular expression literal
         'no-regex-spaces': 'error',
@@ -105,12 +102,12 @@ module.exports = {
 
         // disallow return/throw/break/continue inside finally blocks
         // http://eslint.org/docs/rules/no-unsafe-finally
-        // TODO: enable?
-        'no-unsafe-finally': 'off',
+        'no-unsafe-finally': 'error',
 
         // disallow negating the left operand of relational operators
         // http://eslint.org/docs/rules/no-unsafe-negation
         'no-unsafe-negation': 'error',
+
         // disallow negation of the left operand of an in expression
         // deprecated in favor of no-unsafe-negation
         'no-negated-in-lhs': 'off',
@@ -120,8 +117,7 @@ module.exports = {
 
         // ensure JSDoc comments are valid
         // http://eslint.org/docs/rules/valid-jsdoc
-        // TODO: warn?
-        'valid-jsdoc': 'off',
+        'valid-jsdoc': 'error',
 
         // ensure that the results of typeof are compared against a valid string
         // http://eslint.org/docs/rules/valid-typeof

@@ -112,8 +112,7 @@ module.exports = {
 
         // No Node.js builtin modules
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
-        // TODO: enable?
-        'import/no-nodejs-modules': 'off',
+        'import/no-nodejs-modules': 'error',
 
         // Style guide:
 
@@ -131,9 +130,8 @@ module.exports = {
         'import/no-duplicates': 'error',
 
         // disallow namespace imports
-        // TODO: enable?
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-namespace.md
-        'import/no-namespace': 'off',
+        'import/no-namespace': 'warn',
 
         // Ensure consistent use of file extension within the import path
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
@@ -144,8 +142,7 @@ module.exports = {
 
         // Enforce a convention in module import order
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-        // TODO: enable?
-        'import/order': ['off', {
+        'import/order': ['error', {
             groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
             'newlines-between': 'never',
         }],

@@ -73,8 +73,7 @@ module.exports = {
 
         // disallow useless computed property keys
         // http://eslint.org/docs/rules/no-useless-computed-key
-        // TODO: enable?
-        'no-useless-computed-key': 'off',
+        'no-useless-computed-key': 'error',
 
         // disallow unnecessary constructor
         // http://eslint.org/docs/rules/no-useless-constructor
@@ -99,8 +98,7 @@ module.exports = {
         }],
 
         // suggest using arrow functions as callbacks
-        // TODO: enable?
-        'prefer-arrow-callback': ['off', {
+        'prefer-arrow-callback': ['error', {
             allowNamedFunctions: false,
             allowUnboundThis: true,
         }],
@@ -123,7 +121,6 @@ module.exports = {
 
         // suggest using Reflect methods where applicable
         // http://eslint.org/docs/rules/prefer-reflect
-        // TODO: enable?
         'prefer-reflect': 'off',
 
         // use rest parameters instead of arguments
@@ -132,23 +129,19 @@ module.exports = {
 
         // suggest using the spread operator instead of .apply()
         // http://eslint.org/docs/rules/prefer-spread
-        // TODO: enable?
-        'prefer-spread': 'off',
+        'prefer-spread': 'error',
 
         // suggest using template literals instead of string concatenation
         // http://eslint.org/docs/rules/prefer-template
-        // TODO: enable?
-        'prefer-template': 'off',
+        'prefer-template': 'error',
 
         // disallow generator functions that do not have yield
         // http://eslint.org/docs/rules/require-yield
-        // TODO: enable?
-        'require-yield': 'off',
+        'require-yield': 'error',
 
         // enforce spacing between object rest-spread
         // http://eslint.org/docs/rules/rest-spread-spacing
-        // TODO: enable?
-        'rest-spread-spacing': ['off', 'never'],
+        'rest-spread-spacing': ['error', 'never'],
 
         // import sorting
         // http://eslint.org/docs/rules/sort-imports
