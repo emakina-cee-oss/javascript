@@ -4,6 +4,7 @@
   "description": "EMAKINA CEE Javascript Styleguide, Linting Rules, etc.",
   "main": "index.js",
   "scripts": {
+    "test": "concurrently \"npm run lint\" \"npm run lint:react\" \"npm run lint:angular\"",
     "lint": "eslint -c ./.eslintrc ./test/lint-base.js",
     "lint:react": "eslint -c ./.eslintrc.react ./test/lint-react.js",
     "lint:angular": "eslint -c ./.eslintrc.angular ./test/lint-angular.js"
@@ -37,6 +38,7 @@
     "styleguide"
   ],
   "devDependencies": {
+    "concurrently": "true3.4.0",
     "eslint": "^3.19.0",
     "eslint-plugin-angular": "^2.4.0",
     "eslint-plugin-import": "^2.2.0",
