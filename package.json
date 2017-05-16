@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint -c ./.eslintrc ./test/lint-base.js",
-    "lint-react": "eslint -c ./.eslintrc.react ./test/lint-react.js",
-    "lint-angular": "eslint -c ./.eslintrc.angular ./test/lint-angular.js"
+    "lint:react": "eslint -c ./.eslintrc.react ./test/lint-react.js",
+    "lint:angular": "eslint -c ./.eslintrc.angular ./test/lint-angular.js"
   },
   "author": "EMAKINA CEE",
   "contributors": [
