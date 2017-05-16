@@ -2,7 +2,6 @@
   "name": "javascript",
   "version": "0.0.1",
   "description": "EMAKINA CEE Javascript Styleguide, Linting Rules, etc.",
-  "main": "index.js",
   "scripts": {
     "test": "concurrently \"npm run lint\" \"npm run lint:react\" \"npm run lint:angular\"",
     "lint": "eslint -c ./.eslintrc ./test/lint-base.js",
