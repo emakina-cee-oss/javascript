@@ -1,9 +1,6 @@
 // ESLint Rules provided by eslint-plugin-import
 // https://www.npmjs.com/package/eslint-plugin-import
 
-// TODO: Define rules!
-// Currently copied from https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js
-
 module.exports = {
     env: {
         es6: true
@@ -37,7 +34,7 @@ module.exports = {
     },
 
     rules: {
-        // Static analysis:
+        // STATIC ANALYSIS:
 
         // ensure imports point to files/modules that can be resolved
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
@@ -54,7 +51,8 @@ module.exports = {
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md
         'import/namespace': 'off',
 
-        // Helpful warnings:
+
+        // HELPFUL WARNINGS:
 
         // disallow invalid exports, e.g. multiple defaults
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/export.md
@@ -70,12 +68,12 @@ module.exports = {
 
         // disallow use of jsdoc-marked-deprecated imports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md
-        'import/no-deprecated': 'off',
+        'import/no-deprecated': 'warn',
 
         // Forbid the use of extraneous packages
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
         // paths are treated both as absolute paths, and relative to process.cwd()
-        'import/no-extraneous-dependencies': ['error', {
+        'import/no-extraneous-dependencies': ['off', {
             devDependencies: [
                 'test/**', // tape, common npm pattern
                 'tests/**', // also common npm pattern
@@ -100,7 +98,8 @@ module.exports = {
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md
         'import/no-mutable-exports': 'error',
 
-        // Module systems:
+
+        // MODULE SYSTEMS:
 
         // disallow require()
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-commonjs.md
@@ -114,16 +113,12 @@ module.exports = {
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
         'import/no-nodejs-modules': 'error',
 
-        // Style guide:
+
+        // STYLE GUIDE:
 
         // disallow non-import statements appearing before import statements
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
         'import/first': ['error', 'absolute-first'],
-
-        // disallow non-import statements appearing before import statements
-        // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/imports-first.md
-        // deprecated: use `import/first`
-        'import/imports-first': 'off',
 
         // disallow duplicate imports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
