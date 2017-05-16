@@ -1,6 +1,8 @@
 // ESLint Rules related to react
 // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
 
+// TODO: evaluate and change rules
+
 module.exports = {
     plugins: [
         'react',
