@@ -1,0 +1,6 @@
+{
+    "extends": [
+        "./packages/eslint-config-emakinacee-base/index.js",
+        "./packages/eslint-config-emakinacee-angular/index.js"
+    ]
+}

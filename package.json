@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "EMAKINA CEE Javascript Styleguide, Linting Rules, etc.",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint -c ./.eslintrc ./test/lint-base.js",
+    "lint-react": "eslint -c ./.eslintrc.react ./test/lint-react.js",
+    "lint-angular": "eslint -c ./.eslintrc.angular ./test/lint-angular.js"
+  },
   "author": "EMAKINA CEE",
   "contributors": [
     {
@@ -30,5 +35,14 @@
     "emakina",
     "javascript",
     "styleguide"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-angular": "^2.4.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-standard": "^3.0.1"
+  }
 }
