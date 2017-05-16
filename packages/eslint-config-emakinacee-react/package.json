@@ -1,13 +1,39 @@
 {
   "name": "eslint-config-emakinacee-react",
-  "version": "0.0.0",
-  "description": "ESLint config of EMAKINA CEE - including all react related rules",
+  "version": "0.0.1",
+  "description": "ESLint react config of EMAKINA CEE",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
   "author": "EMAKINA CEE",
+  "contributors": [
+    {
+      "name": "Thomas Peklak",
+      "email": "t.peklak@emakina.at"
+    },
+    {
+      "name": "Daniel Gördes",
+      "email": "d.goerdes@emakina.at"
+    }
+  ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emakina-cee-oss/javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/emakina-cee-oss/javascript/issues"
+  },
+  "homepage": "https://github.com/emakina-cee-oss/javascript",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "emakina",
+    "javascript",
+    "styleguide"
+  ],
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.2.0",

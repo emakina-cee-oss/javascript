@@ -1,11 +1,34 @@
 {
   "name": "javascript",
-  "version": "0.0.0",
-  "description": "Conventions, guidelines, rules, etc. for JS",
+  "version": "0.0.1",
+  "description": "EMAKINA CEE Javascript Styleguide, Linting Rules, etc.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "EMAKINA CEE",
-  "license": "MIT"
+  "contributors": [
+    {
+      "name": "Thomas Peklak",
+      "email": "t.peklak@emakina.at"
+    },
+    {
+      "name": "Daniel Gördes",
+      "email": "d.goerdes@emakina.at"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emakina-cee-oss/javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/emakina-cee-oss/javascript/issues"
+  },
+  "homepage": "https://github.com/emakina-cee-oss/javascript",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "emakina",
+    "javascript",
+    "styleguide"
+  ]
 }
