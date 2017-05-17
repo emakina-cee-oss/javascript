@@ -21,12 +21,12 @@ module.exports = {
     settings: {
         'import/resolver': {
             node: {
-                extensions: ['.js', '.jsx', '.json']
+                extensions: ['.js', '.jsx', '.json'] // extends the settings for the imports plugin of our base package
             }
         },
         react: {
             pragma: 'React',
-            version: '0.15'
+            version: '15.0'
         },
     },
 
@@ -35,7 +35,12 @@ module.exports = {
         // http://eslint.org/docs/rules/jsx-quotes
         'jsx-quotes': ['error', 'prefer-double'],
 
-        'class-methods-use-this': ['error', {
+        // enforce that class methods use "this"
+        // http://eslint.org/docs/rules/class-methods-use-this
+        //
+        // Part of: eslint-config-emakinacee-base/best-practices
+        // Add react specific exceptions for this rule.
+        'class-methods-use-this': ['warn', {
             exceptMethods: [
                 'render',
                 'getInitialState',
@@ -80,7 +85,7 @@ module.exports = {
 
         // Validate props indentation in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
-        'react/jsx-indent-props': ['error', 2],
+        'react/jsx-indent-props': ['error', 4],
 
         // Validate JSX has key prop when in array or iterator
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
@@ -248,7 +253,7 @@ module.exports = {
 
         // Enforce JSX indentation
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
-        'react/jsx-indent': ['error', 2],
+        'react/jsx-indent': ['error', 4],
 
         // Disallow target="_blank" on links
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
