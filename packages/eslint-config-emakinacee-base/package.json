@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-emakinacee-base",
   "version": "0.0.1",
-  "description": "ESLint baseline config of EMAKINA CEE",
+  "description": "ESLint config of EMAKINA CEE",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
