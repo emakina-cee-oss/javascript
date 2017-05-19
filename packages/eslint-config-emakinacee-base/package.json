@@ -34,12 +34,6 @@
     "javascript",
     "styleguide"
   ],
-  "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
-  },
   "peerDependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.2.0",

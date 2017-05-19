@@ -34,10 +34,6 @@
     "javascript",
     "styleguide"
   ],
-  "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-plugin-angular": "^2.4.0"
-  },
   "peerDependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-angular": "^2.4.0"
