@@ -13,9 +13,16 @@ We recommend to use these react specific rules in addition to our [base rules]()
 + `eslint-plugin-react`
 
 ## Usage
-1. Install all dependencies mentioned above. Required versions can be listed by the command:
+1. Install the config and all dependencies mentioned above.
     ```sh
-    npm info "eslint-config-emakinacee-react@latest" peerDependencies
+    npm install eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-config-emakinacee-react
     ```
 
-2. Extend the config in your .eslintrc by adding `"extends": "emakinacee-react"`
+2. Extend the config in your .eslintrc by adding `"extends": "emakinacee-react"` e.g.:
+    ```json
+    {
+        "extends": [
+            "emakinacee-react"
+        ]
+    }
+    ```
