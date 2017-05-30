@@ -11,9 +11,16 @@ This package contains all ESLint baseline rules, including ES6+.
 + `eslint-plugin-standard`
 
 ## Usage
-1. Install all dependencies mentioned above. Required versions can be listed by the command:
+1. Install the config and all dependencies mentioned above.
     ```sh
-    npm info "eslint-config-emakinacee-base@latest" peerDependencies
+    npm install eslint eslint-plugin-import eslint-plugin-promise eslint-plugin-standard eslint-config-emakinacee-base
     ```
 
-2. Extend the config in your .eslintrc by adding `"extends": "emakinacee-base"`
+2. Extend the config in your .eslintrc by adding `"extends": "emakinacee-react"` e.g.:
+    ```json
+    {
+        "extends": [
+            "emakinacee-base"
+        ]
+    }
+    ```
