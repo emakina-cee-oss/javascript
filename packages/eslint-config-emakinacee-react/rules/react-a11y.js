@@ -5,8 +5,10 @@ module.exports = {
         'jsx-a11y'
     ],
 
-    ecmaFeatures: {
-        jsx: true
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        }
     },
 
     rules: {

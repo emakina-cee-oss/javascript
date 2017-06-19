@@ -14,10 +14,6 @@ module.exports = {
         },
     },
 
-    ecmaFeatures: {
-        jsx: true,
-    },
-
     settings: {
         'import/resolver': {
             node: {
