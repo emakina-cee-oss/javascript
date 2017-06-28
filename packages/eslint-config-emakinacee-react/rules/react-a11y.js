@@ -16,6 +16,10 @@ module.exports = {
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md
         'jsx-a11y/anchor-has-content': ['error', { components: [''] }],
 
+        // Enforce that anchors have content
+        // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md
+        'jsx-a11y/anchor-is-valid': ['error', { components: [''] }],
+
         // Require ARIA roles to be valid and non-abstract
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md
         'jsx-a11y/aria-role': ['error', { ignoreNonDom: false }],
@@ -32,10 +36,6 @@ module.exports = {
         // properties do not have those attributes.
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md
         'jsx-a11y/aria-unsupported-elements': 'error',
-
-        // disallow href "#"
-        // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/href-no-hash.md
-        'jsx-a11y/href-no-hash': ['error', { components: ['a'] }],
 
         // Enforce that all elements that require alternative text have meaningful information
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md
