@@ -2,8 +2,6 @@
 
 [![npm version](https://badge.fury.io/js/eslint-config-emakinacee-react.svg)](http://badge.fury.io/js/eslint-config-emakinacee-react)
 
-_ ! Work in progress ! _
-
 This package contains all ESLint react specific rules.
 We recommend to use these react specific rules in addition to our [base rules]().
 
