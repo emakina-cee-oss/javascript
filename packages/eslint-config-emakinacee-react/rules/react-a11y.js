@@ -113,6 +113,8 @@ module.exports = {
 
         // Enforce that DOM elements without semantic behavior not have interaction handlers
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md
+        // Note that dynamic props seem to be invalid, see https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/245
+        // Clickable table row: https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/88#issuecomment-268662805
         'jsx-a11y/no-static-element-interactions': ['error', {
             handlers: [
                 'onClick',
@@ -187,5 +189,10 @@ module.exports = {
             tags: [],
             roles: ['tabpanel'],
         }],
+        
+        // Some WAI-ARIA roles do not allow event-handlers
+        // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-interactions.md
+        // Currently has a bug with form elements: https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/253
+        'jsx-a11y/no-noninteractive-element-handlers': 'error',
     },
 };
