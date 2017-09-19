@@ -7,8 +7,8 @@ module.exports = {
     ],
 
     rules: {
-        'standard/object-curly-even-spacing': ['error', 'either'],
-        'standard/array-bracket-even-spacing': ['error', 'either'],
-        'standard/computed-property-even-spacing': ['error', 'even']
+        'standard/object-curly-even-spacing': ['warn', 'either'],
+        'standard/array-bracket-even-spacing': ['warn', 'either'],
+        'standard/computed-property-even-spacing': ['warn', 'even']
     }
 };

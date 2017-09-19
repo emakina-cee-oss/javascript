@@ -33,7 +33,7 @@ module.exports = {
         'no-control-regex': 'error',
 
         // disallow use of debugger
-        'no-debugger': 'error',
+        'no-debugger': 'warn',
 
         // disallow duplicate arguments in functions
         'no-dupe-args': 'error',
@@ -117,7 +117,7 @@ module.exports = {
 
         // ensure JSDoc comments are valid
         // http://eslint.org/docs/rules/valid-jsdoc
-        'valid-jsdoc': 'error',
+        'valid-jsdoc': 'warn',
 
         // ensure that the results of typeof are compared against a valid string
         // http://eslint.org/docs/rules/valid-typeof

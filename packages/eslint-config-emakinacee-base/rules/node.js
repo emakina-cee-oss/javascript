@@ -15,17 +15,17 @@ module.exports = {
         'global-require': 'off',
 
         // enforces error handling in callbacks (node environment)
-        'handle-callback-err': ['error', '^(err)$'],
+        'handle-callback-err': ['warn', '^(err)$'],
 
         // disallow mixing regular variable and require declarations
         'no-mixed-requires': ['off', false],
 
         // disallow use of new operator with the require function
-        'no-new-require': 'error',
+        'no-new-require': 'warn',
 
         // disallow string concatenation with __dirname and __filename
         // http://eslint.org/docs/rules/no-path-concat
-        'no-path-concat': 'error',
+        'no-path-concat': 'warn',
 
         // disallow use of process.env
         'no-process-env': 'off',

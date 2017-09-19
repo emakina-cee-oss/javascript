@@ -38,7 +38,7 @@ module.exports = {
 
         // ensure imports point to files/modules that can be resolved
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
-        'import/no-unresolved': ['error', { commonjs: true, caseSensitive: true }],
+        'import/no-unresolved': ['warn', { commonjs: true, caseSensitive: true }],
 
         // ensure named imports coupled with named exports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md#when-not-to-use-it
@@ -56,15 +56,15 @@ module.exports = {
 
         // disallow invalid exports, e.g. multiple defaults
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/export.md
-        'import/export': 'error',
+        'import/export': 'warn',
 
         // do not allow a default import name to match a named export
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md
-        'import/no-named-as-default': 'error',
+        'import/no-named-as-default': 'warn',
 
         // warn on accessing default export property names that are also named exports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md
-        'import/no-named-as-default-member': 'error',
+        'import/no-named-as-default-member': 'warn',
 
         // disallow use of jsdoc-marked-deprecated imports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md
@@ -96,7 +96,7 @@ module.exports = {
 
         // Forbid mutable exports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md
-        'import/no-mutable-exports': 'error',
+        'import/no-mutable-exports': 'warn',
 
 
         // MODULE SYSTEMS:
@@ -107,22 +107,22 @@ module.exports = {
 
         // disallow AMD require/define
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-amd.md
-        'import/no-amd': 'error',
+        'import/no-amd': 'warn',
 
         // No Node.js builtin modules
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
-        'import/no-nodejs-modules': 'error',
+        'import/no-nodejs-modules': 'warn',
 
 
         // STYLE GUIDE:
 
         // disallow non-import statements appearing before import statements
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
-        'import/first': ['error', 'absolute-first'],
+        'import/first': ['warn', 'absolute-first'],
 
         // disallow duplicate imports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
-        'import/no-duplicates': 'error',
+        'import/no-duplicates': 'warn',
 
         // disallow namespace imports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-namespace.md
@@ -130,25 +130,25 @@ module.exports = {
 
         // Ensure consistent use of file extension within the import path
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
-        'import/extensions': ['error', 'always', {
+        'import/extensions': ['warn', 'always', {
             js: 'never',
             jsx: 'never',
         }],
 
         // Enforce a convention in module import order
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-        'import/order': ['error', {
+        'import/order': ['warn', {
             groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
             'newlines-between': 'never',
         }],
 
         // Require a newline after the last import/require in a group
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
-        'import/newline-after-import': 'error',
+        'import/newline-after-import': 'warn',
 
         // Require modules with a single export to use a default export
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-        'import/prefer-default-export': 'error',
+        'import/prefer-default-export': 'warn',
 
         // Restrict which files can be imported in a given folder
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
@@ -160,11 +160,11 @@ module.exports = {
 
         // Forbid import of modules using absolute paths
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
-        'import/no-absolute-path': 'error',
+        'import/no-absolute-path': 'warn',
 
         // Forbid require() calls with expressions
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
-        'import/no-dynamic-require': 'error',
+        'import/no-dynamic-require': 'warn',
 
         // prevent importing the submodules of other modules
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md
@@ -181,7 +181,7 @@ module.exports = {
 
         // Forbid Webpack loader syntax in imports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
-        'import/no-webpack-loader-syntax': 'error',
+        'import/no-webpack-loader-syntax': 'warn',
 
         // Prevent unassigned imports
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
@@ -190,6 +190,6 @@ module.exports = {
 
         // Prevent importing the default as if it were named
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
-        'import/no-named-default': 'error',
+        'import/no-named-default': 'warn',
     },
 };

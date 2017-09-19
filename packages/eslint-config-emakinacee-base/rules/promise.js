@@ -7,6 +7,6 @@ module.exports = {
     ],
 
     rules: {
-        'promise/param-names': 'error'
+        'promise/param-names': 'warn'
     }
 };

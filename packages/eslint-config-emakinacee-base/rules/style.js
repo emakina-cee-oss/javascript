@@ -8,13 +8,13 @@ module.exports = {
 
         // enforce spacing inside single-line blocks
         // http://eslint.org/docs/rules/block-spacing
-        'block-spacing': ['error', 'always'],
+        'block-spacing': ['warn', 'always'],
 
         // enforce one true brace style
-        'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+        'brace-style': ['warn', '1tbs', { allowSingleLine: true }],
 
         // require camel case names
-        camelcase: ['error', { properties: 'never' }],
+        camelcase: ['warn', { properties: 'never' }],
 
         // enforce or disallow capitalization of the first letter of a comment
         // http://eslint.org/docs/rules/capitalized-comments
@@ -32,10 +32,10 @@ module.exports = {
         }],
 
         // enforce spacing before and after comma
-        'comma-spacing': ['error', { before: false, after: true }],
+        'comma-spacing': ['warn', { before: false, after: true }],
 
         // enforce one true comma style
-        'comma-style': ['error', 'last'],
+        'comma-style': ['warn', 'last'],
 
         // disallow padding inside computed properties
         'computed-property-spacing': ['off', 'never'],
@@ -44,7 +44,7 @@ module.exports = {
         'consistent-this': 'off',
 
         // enforce newline at the end of file, with no multiple empty lines
-        'eol-last': 'error',
+        'eol-last': 'warn',
 
         // enforce spacing between functions and their invocations
         // http://eslint.org/docs/rules/func-call-spacing
@@ -78,17 +78,17 @@ module.exports = {
 
         // this option sets a specific tab width for your code
         // http://eslint.org/docs/rules/indent
-        indent: ['error', 4, { SwitchCase: 1 }],
+        indent: ['warn', 4, { SwitchCase: 1 }],
 
         // specify whether double or single quotes should be used in JSX attributes
         // http://eslint.org/docs/rules/jsx-quotes
-        'jsx-quotes': ['error', 'prefer-single'],
+        'jsx-quotes': ['warn', 'prefer-single'],
 
         // enforces spacing between keys and values in object literal properties
-        'key-spacing': ['error', { beforeColon: false, afterColon: true }],
+        'key-spacing': ['warn', { beforeColon: false, afterColon: true }],
 
         // require a space before & after certain keywords
-        'keyword-spacing': ['error', {
+        'keyword-spacing': ['warn', {
             before: true,
             after: true,
             overrides: {
@@ -159,14 +159,14 @@ module.exports = {
         'multiline-ternary': ['off', 'never'],
 
         // require a capital letter for constructors
-        'new-cap': ['error', {
+        'new-cap': ['warn', {
             newIsCap: true,
             capIsNew: false
         }],
 
         // disallow the omission of parentheses when invoking a constructor with no arguments
         // http://eslint.org/docs/rules/new-parens
-        'new-parens': 'error',
+        'new-parens': 'warn',
 
         // allow/disallow an empty newline after var statement
         'newline-after-var': 'off',
@@ -177,10 +177,10 @@ module.exports = {
         // enforces new line after each method call in the chain to make it
         // more readable and easy to maintain
         // http://eslint.org/docs/rules/newline-per-chained-call
-        'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
+        'newline-per-chained-call': ['warn', { ignoreChainWithDepth: 2 }],
 
         // disallow use of the Array constructor
-        'no-array-constructor': 'error',
+        'no-array-constructor': 'warn',
 
         // disallow use of bitwise operators
         // http://eslint.org/docs/rules/no-bitwise
@@ -195,7 +195,7 @@ module.exports = {
 
         // disallow if as the only statement in an else block
         // http://eslint.org/docs/rules/no-lonely-if
-        'no-lonely-if': 'error',
+        'no-lonely-if': 'warn',
 
         // disallow un-paren'd mixes of different operators
         // http://eslint.org/docs/rules/no-mixed-operators
@@ -211,14 +211,14 @@ module.exports = {
         }],
 
         // disallow mixed spaces and tabs for indentation
-        'no-mixed-spaces-and-tabs': 'error',
+        'no-mixed-spaces-and-tabs': 'warn',
 
         // disallow use of chained assignment expressions
         // http://eslint.org/docs/rules/no-multi-assign
         'no-multi-assign': ['off'],
 
         // disallow multiple empty lines and only one newline at the end
-        'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
+        'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 1 }],
 
         // disallow negated conditions
         // http://eslint.org/docs/rules/no-negated-condition
@@ -228,7 +228,7 @@ module.exports = {
         'no-nested-ternary': 'off',
 
         // disallow use of the Object constructor
-        'no-new-object': 'error',
+        'no-new-object': 'warn',
 
         // disallow use of unary operators, ++ and --
         // http://eslint.org/docs/rules/no-plusplus
@@ -257,16 +257,16 @@ module.exports = {
         ],
 
         // disallow space between function identifier and application
-        'no-spaced-func': 'error',
+        'no-spaced-func': 'warn',
 
         // disallow tab characters entirely
-        'no-tabs': 'error',
+        'no-tabs': 'warn',
 
         // disallow the use of ternary operators
         'no-ternary': 'off',
 
         // disallow trailing whitespace at the end of lines
-        'no-trailing-spaces': 'error',
+        'no-trailing-spaces': 'warn',
 
         // disallow dangling underscores in identifiers
         'no-underscore-dangle': ['off', { allowAfterThis: false }],
@@ -274,7 +274,7 @@ module.exports = {
         // disallow the use of Boolean literals in conditional expressions
         // also, prefer `a || b` over `a ? a : b`
         // http://eslint.org/docs/rules/no-unneeded-ternary
-        'no-unneeded-ternary': ['error', { defaultAssignment: false }],
+        'no-unneeded-ternary': ['warn', { defaultAssignment: false }],
 
         // disallow whitespace before properties
         // http://eslint.org/docs/rules/no-whitespace-before-property
@@ -301,7 +301,7 @@ module.exports = {
         }],
 
         // allow just one var statement per function
-        'one-var': ['error', 'never'],
+        'one-var': ['warn', 'never'],
 
         // require a newline around variable declaration
         // http://eslint.org/docs/rules/one-var-declaration-per-line
@@ -312,7 +312,7 @@ module.exports = {
         'operator-assignment': ['off', 'always'],
 
         // enforce operators to be placed before or after line breaks
-        'operator-linebreak': ['error', 'after', {
+        'operator-linebreak': ['warn', 'after', {
             overrides: {
                 '?': 'before',
                 ':': 'before',
@@ -329,17 +329,17 @@ module.exports = {
         'quote-props': ['off', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
 
         // specify whether double or single quotes should be used
-        quotes: ['error', 'single'],
+        quotes: ['warn', 'single'],
 
         // do not require jsdoc
         // http://eslint.org/docs/rules/require-jsdoc
         'require-jsdoc': 'off',
 
         // require or disallow use of semicolons instead of ASI
-        semi: ['error', 'always'],
+        semi: ['warn', 'always'],
 
         // enforce spacing before and after semicolons
-        'semi-spacing': ['error', { before: false, after: true }],
+        'semi-spacing': ['warn', { before: false, after: true }],
 
         // requires object keys to be sorted
         'sort-keys': ['off', 'asc', { caseSensitive: false, natural: true }],
@@ -348,25 +348,25 @@ module.exports = {
         'sort-vars': 'off',
 
         // require or disallow space before blocks
-        'space-before-blocks': ['error', 'always'],
+        'space-before-blocks': ['warn', 'always'],
 
         // require or disallow space before function opening parenthesis
         // http://eslint.org/docs/rules/space-before-function-paren
-        'space-before-function-paren': ['error', {
+        'space-before-function-paren': ['warn', {
             anonymous: 'always',
             named: 'never',
             asyncArrow: 'always'
         }],
 
         // require or disallow spaces inside parentheses
-        'space-in-parens': ['error', 'never'],
+        'space-in-parens': ['warn', 'never'],
 
         // require spaces around operators
-        'space-infix-ops': 'error',
+        'space-infix-ops': 'warn',
 
         // Require or disallow spaces before/after unary operators
         // http://eslint.org/docs/rules/space-unary-ops
-        'space-unary-ops': ['error', {
+        'space-unary-ops': ['warn', {
             words: true,
             nonwords: false,
             overrides: {
@@ -375,7 +375,7 @@ module.exports = {
 
         // require or disallow a space immediately following the // or /* in a comment
         // http://eslint.org/docs/rules/spaced-comment
-        'spaced-comment': ['error', 'always', {
+        'spaced-comment': ['warn', 'always', {
             line: {
                 exceptions: ['-', '+'],
                 markers: ['=', '!'], // space here to support sprockets directives
