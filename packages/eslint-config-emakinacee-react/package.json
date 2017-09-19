@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-emakinacee-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESLint react config of EMAKINA CEE",
   "main": "index.js",
   "scripts": {
