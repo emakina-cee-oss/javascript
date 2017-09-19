@@ -148,6 +148,7 @@ module.exports = {
 
         // Require modules with a single export to use a default export
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
+        // TODO: Discuss this rule - would suggest to disable it.
         'import/prefer-default-export': 'warn',
 
         // Restrict which files can be imported in a given folder

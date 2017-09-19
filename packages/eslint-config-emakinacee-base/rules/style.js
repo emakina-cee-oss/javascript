@@ -312,6 +312,7 @@ module.exports = {
         'operator-assignment': ['off', 'always'],
 
         // enforce operators to be placed before or after line breaks
+        // TODO: Discuss this (there where issues reported according to conflicts with the indent rule)
         'operator-linebreak': ['warn', 'after', {
             overrides: {
                 '?': 'before',
