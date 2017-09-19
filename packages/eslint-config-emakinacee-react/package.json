@@ -35,9 +35,9 @@
     "styleguide"
   ],
   "peerDependencies": {
-    "eslint": "^4.0.0",
-    "eslint-plugin-jsx-a11y": "^6.0.0",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint": "^4.7.1",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0"
   },
   "engines": {
     "node": ">= 4"
