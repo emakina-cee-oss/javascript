@@ -189,11 +189,5 @@ module.exports = {
             tags: [],
             roles: ['tabpanel'],
         }],
-
-        // Some WAI-ARIA roles do not allow event-handlers
-        // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-interactions.md
-        // Info about non-interactive elements and interaction handlers:
-        // https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/153#issuecomment-295517245
-        'jsx-a11y/no-noninteractive-element-handlers': 'warn',
     },
 };
