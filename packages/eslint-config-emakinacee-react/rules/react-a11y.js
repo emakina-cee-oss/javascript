@@ -53,7 +53,13 @@ module.exports = {
 
         // require that JSX labels use "htmlFor"
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-        'jsx-a11y/label-has-for': ['warn', { components: ['label'] }],
+        'jsx-a11y/label-has-for': ['warn', {
+            components: ['Label'],
+            required: {
+                some: ['nesting', 'id']
+            },
+            allowChildren: false
+        }],
 
         // require that mouseover/out come with focus/blur, for keyboard-only users
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/mouse-events-have-key-events.md
