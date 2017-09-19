@@ -1,5 +1,3 @@
-// TODO: evaluate and change rules
-
 module.exports = {
     plugins: [
         'jsx-a11y'
