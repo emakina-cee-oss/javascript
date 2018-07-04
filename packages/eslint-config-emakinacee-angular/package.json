@@ -35,7 +35,10 @@
     "styleguide"
   ],
   "peerDependencies": {
-    "eslint": "^4.7.1",
-    "eslint-plugin-angular": "^3.1.1"
+    "eslint": "^5.0.1",
+    "eslint-plugin-angular": "^3.3.0"
+  },
+  "engines": {
+    "node": ">= 6.14.0"
   }
 }
