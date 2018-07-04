@@ -35,12 +35,12 @@
     "styleguide"
   ],
   "peerDependencies": {
-    "eslint": "^4.7.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint": "^5.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6.14.0"
   }
 }
